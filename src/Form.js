@@ -190,7 +190,7 @@ export default function Form(props) {
 					<input
 						id="special-text"
 						type="text"
-						value={values.isntructions}
+						value={values.instructions}
 						onChange={onChange}
 						name="instructions"
 						placeholder="Anything else?"

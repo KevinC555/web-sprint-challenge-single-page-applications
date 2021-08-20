@@ -9,5 +9,5 @@ export default function Home() {
 	)
 }
 
-// For the homepage / button, it works epfrectly, however the test doesn't seem to want to pass. It works when clicking it. 
+// For the homepage / button, it works perfectly, however the test doesn't seem to want to pass. It works when clicking it. 
 

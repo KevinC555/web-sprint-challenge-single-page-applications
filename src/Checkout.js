@@ -36,7 +36,7 @@ export default function Checkout() {
 		axios.post('https://reqres.in/api/orders', newOrder)
 			.then(res => {
 				console.log(res);
-				setOrders(res.data.data);
+				setOrders([res.data, ...orders]);
 			}).catch(err => console.error(err));
 		setFormValues(initialFormValues);
 	}
@@ -62,6 +62,7 @@ export default function Checkout() {
 			toppings: formValues.toppings,
 			instructions: formValues.instructions.trim(),
 			quantity: formValues.quantity.trim(),
+			name: formValues.name.trim(),
 		}
 		postNewOrder(newOrder);
 	}
